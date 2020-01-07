@@ -26,10 +26,11 @@ The Drivers ID is set to 0 while the Operator is set to 1*/
 
 /*The NeoSparks SpeedController instantiation with their CAN ID
  and the type of motor its wired with respectively*/
-frc::VictorSP m_leftTopMotor{0};
-frc::VictorSP m_rightTopMotor{1};
+frc::VictorSP m_leftTopMotor{3};
 frc::VictorSP m_leftBottomMotor{2};
-frc::VictorSP m_rightBottomMotor{3};
+
+frc::VictorSP m_rightTopMotor{1};
+frc::VictorSP m_rightBottomMotor{0};
 
 /*DriveTrain Object */
 DriveTrain drivetrain{m_leftTopMotor, m_rightTopMotor, m_leftBottomMotor, m_rightBottomMotor, Driver};
